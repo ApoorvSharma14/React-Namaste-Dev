@@ -1,0 +1,21 @@
+<!-- create a simple html file and insert and element in the root element using JavaScript -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="root">Hello World</div>
+    <script>
+      //creating an element heading h1 tag
+      const heading = document.createElement("h1"); //creating the element h1
+      heading.innerHTML = "This is JavaScript"; // writing some content inside the h1 tag
+
+      //select the root element from the html and append the heading into it.
+      const root = document.querySelector(".root"); //selecting the root element
+      root.appendChild(heading); //appending the heading tag
+    </script>
+  </body>
+</html>
